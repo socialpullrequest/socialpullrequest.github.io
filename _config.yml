@@ -1,0 +1,13 @@
+# Site settings
+title: Social Pull Request
+description: O SPR é um movimento que busca unir a criatividade e proatividade de desenvolvedores com o conhecimento e desejo de ajudar de pessoas ou organizações envolvidas com o Social.
+
+baseurl: ""
+url: http://socialpullrequest.org/
+domain: socialpullrequest.org
+
+# Build settings
+markdown: kramdown
+
+sass:
+  sass_dir: assets/scss
