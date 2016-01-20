@@ -1,0 +1,66 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+//colors
+$highlight: #e74c3c;
+$complementary: #f1c40f;
+
+//layouts
+html,body {
+  height: 100%;
+}
+
+.content {
+  height: 100%;
+  background: #ececec;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 15px;
+}
+
+//components
+.heading-lv1 {
+  font-size: 40px;
+  margin: 0;
+  color: $highlight;
+  background-image: url("../img/social-pullrequests.png");
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding:50px 0 50px 110px;
+}
+
+.heading-lv2 {
+  font-size: 20px;
+  margin: 10px 0;
+  color: #4f4e4e;
+}
+
+.paragraph {
+  margin: 5px 0;
+  max-width: 800px;
+  width: 100%;
+  color: #4f4e4e;
+}
+
+.strong {
+  color: $highlight;
+}
+
+.btn {
+  border: 1px solid $highlight;
+  display: inline-block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: $highlight;
+  margin: 20px 0;
+  transition: color .3s, background .3s;
+}
+
+.btn:hover {
+  color: #ececec;
+  background: $highlight;
+}

@@ -10,4 +10,4 @@ domain: socialpullrequest.org
 markdown: kramdown
 
 sass:
-  sass_dir: assets/scss
+  sass_dir: assets/styles
