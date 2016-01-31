@@ -4,17 +4,18 @@
 @charset "utf-8";
 
 //colors
-$highlight: #e74c3c;
-$complementary: #f1c40f;
+$highlight: #fff;
+$complementary: #a9a9a9;
 
 //layouts
 html,body {
   height: 100%;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .content {
   height: 100%;
-  background: #ececec;
+  background: #0e1f33;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,26 +25,20 @@ html,body {
 
 //components
 .heading-lv1 {
-  font-size: 40px;
-  margin: 0;
-  color: $highlight;
-  background-image: url("../img/social-pullrequests.png");
-  background-repeat: no-repeat;
-  background-position: left center;
-  padding:50px 0 50px 110px;
+  margin: 20px 0;
 }
 
 .heading-lv2 {
   font-size: 20px;
   margin: 10px 0;
-  color: #4f4e4e;
+  color: $highlight;
 }
 
 .paragraph {
   margin: 5px 0;
   max-width: 800px;
   width: 100%;
-  color: #4f4e4e;
+  color: $complementary;
 }
 
 .strong {
@@ -61,6 +56,6 @@ html,body {
 }
 
 .btn:hover {
-  color: #ececec;
+  color: #0e1f33;
   background: $highlight;
 }
