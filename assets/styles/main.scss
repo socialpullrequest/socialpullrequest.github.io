@@ -5,6 +5,7 @@
 
 //colors
 $highlight: #fff;
+$highlightSecondary: #0e1f33;
 $complementary: #a9a9a9;
 
 //layouts
@@ -14,8 +15,12 @@ html,body {
 }
 
 .content {
-  height: 100%;
+  height: 700px;
   background: #0e1f33;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+    url('/assets/img/background.jpg'); 
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -23,9 +28,41 @@ html,body {
   padding: 0 15px;
 }
 
+section {
+  width: 820px;
+  margin: 0 auto;
+  line-height: 1.5em;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  color: #444;
+}
+
+section > .section-description {
+  width: 60%;}
+    section > .section-description .paragraph {
+      margin-bottom: 20px;}
+
+section > .section-image {
+  width: 35%;}
+    section > .section-image img {
+      width: 100%;}
+
+footer {
+  background: #0e1f33;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px;
+  color: #FFF;
+}
+
 //components
 .heading-lv1 {
   margin: 20px 0;
+  color: $highlight;
+  font-size: 50px;
 }
 
 .heading-lv2 {
@@ -38,11 +75,10 @@ html,body {
   margin: 5px 0;
   max-width: 800px;
   width: 100%;
-  color: $complementary;
 }
 
 .strong {
-  color: $highlight;
+  color: $highlightSecondary;
 }
 
 .btn {
