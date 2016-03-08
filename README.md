@@ -9,6 +9,8 @@ Encontro voltado para unir programadores com ações sociais
 ***
 
 ####Apoio: 
+<a href="https://t.co/ITBb1EQ2vG" target="_blank"><img height="40px;" src="https://pbs.twimg.com/profile_images/639257565717729280/RimYprus.png"> FrontEnd Meetup Group</a>
+
 <a href="https://plus.google.com/+GDGRiodeJaneiroOficial" target="_blank"><img src="http://farm1.staticflickr.com/591/23771435115_af0eaebc15_b.jpg"></a>
 
 
