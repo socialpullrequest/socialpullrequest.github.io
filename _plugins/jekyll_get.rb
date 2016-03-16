@@ -1,6 +1,5 @@
 require 'csv'
 require 'open-uri'
-require 'pry'
 require 'json'
 
 module Jekyll_Get
@@ -13,7 +12,7 @@ module Jekyll_Get
     def generate(site)
       site.data["ongs"] = CSV.new(open(ONG_CSV_URL).read, headers: :first_row).select { |row| row[5] == "Aprovado" }.map do |row|
         fetch_ong_from_csv_row(row)
-      end.to_json
+      end
     end
 
     def fetch_ong_from_csv_row(row)
