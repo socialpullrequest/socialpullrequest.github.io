@@ -26,7 +26,7 @@ layout: default
     <p class="paragraph">
       Unir quem precisa com quem pode ajudar. Ajudar fazendo o que gosta é a melhor maneira de continuar ajudando.
     </p>
-  
+
     <p class="paragraph">
       Existem vários problemas que podem ser resolvidos só com boa vontade e cooperação (sem envolvimento de dinheiro). Como programadores, a maneira mais eficiente de doar nosso tempo para a sociedade é programando.
     </p>
@@ -35,3 +35,7 @@ layout: default
     <img src="assets/img/world.png" alt="Mundo">
   </div>
 </section>
+
+{% for ong in site.data.ongs %}
+  <a href="">{{ ong.name }}</a>
+{% endfor %}
