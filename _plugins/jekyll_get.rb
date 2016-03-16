@@ -11,13 +11,9 @@ module Jekyll_Get
     ONG_CSV_URL = "https://docs.google.com/spreadsheets/d/1NQAfOgeO8CwYVzDDjkATrHZ9RssyyVzvl_CYYBVIU9U/pub?output=csv"
 
     def generate(site)
-      ongs= []
-
-      source = CSV.new(open(ONG_CSV_URL).read, headers: :first_row).each do |row|
-        ongs << fetch_ong_from_csv_row(row) if row[5] == "Aprovado"
-      end
-
-      site.data["ongs"] = ongs.to_json
+      site.data["ongs"] = CSV.new(open(ONG_CSV_URL).read, headers: :first_row).select { |row| row[5] == "Aprovado" }.map do |row|
+        fetch_ong_from_csv_row(row)
+      end.to_json
     end
 
     def fetch_ong_from_csv_row(row)
