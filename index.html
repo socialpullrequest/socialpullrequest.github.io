@@ -36,6 +36,14 @@ layout: default
   </div>
 </section>
 
+<h1>Ongs</h1>
+
 {% for ong in site.data.ongs %}
   <a href="">{{ ong.name }}</a>
+{% endfor %}
+
+<h1>Devs</h1>
+
+{% for dev in site.data.devs %}
+  <a href="">{{ dev.name }}</a>
 {% endfor %}
