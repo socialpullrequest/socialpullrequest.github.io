@@ -16,7 +16,7 @@ html,body {
 
 .content {
   height: 700px;
-  background: #0e1f33;
+  background: $highlightSecondary;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), 
     url('/assets/img/background.jpg'); 
   background-repeat: no-repeat;
@@ -49,7 +49,7 @@ section > .section-image {
       width: 100%;}
 
 footer {
-  background: #0e1f33;
+  background: $highlightSecondary;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -92,6 +92,28 @@ footer {
 }
 
 .btn:hover {
-  color: #0e1f33;
+  color: $highlightSecondary;
   background: $highlight;
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+  .content {
+    height: 420px;
+  }
+  section {
+    width: 96%;
+    display: block;
+    padding: 2%;
+    margin: 0 auto;
+  }
+  section > .section-description {
+    width: 90%; margin: 0 auto;}
+      section > .section-description .paragraph {
+        margin-bottom: 20px;}
+
+  section > .section-image {
+    width: 90%; margin: 0 auto;}
+      section > .section-image img {
+        width: 100%;}
 }
