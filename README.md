@@ -15,7 +15,7 @@ Encontro voltado para unir programadores com ações sociais
 
 
 
-=======
+***
 # socialpullrequest.github.io
 
 ## Como rodar o projeto localmente:
